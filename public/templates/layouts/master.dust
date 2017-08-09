@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{+title /}</title>
+
+    
+    <link rel="stylesheet" href="/css/foundation.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+</head>
+<body>
+
+<div class="row">
+    <div class="large-12 columns top-heading">
+        <h1>Book Store</h1>
+    </div>
+</div>
+
+<div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+  <div class="title-bar-title">Menu</div>
+</div>
+
+<div class="top-bar" id="responsive-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text">Site Title</li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/pages/about">About</a></li>
+      <li><a href="/cart">Cart</a></li>
+    </ul>
+  </div>
+</div>
+    <div class="large-12 columns">
+        {#messages /}
+        {+body /}
+    </div>    
+    
+<footer>
+    <div class="row">
+        <div class="large-12 columns">
+            <p>BookStore &copy; 2017 | <a href="/manage">Manage </a></p>
+        </div>
+    </div>
+</footer>
+    
+<script src="/js/jquery.js"></script>
+<script src="/js/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+<script data-main="/js/app" src="/components/requirejs/require.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+</body>
+</html>
